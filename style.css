@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    cursor: pointer;
+}
+.card{
+    box-shadow: 1px 1px 10px 7px #aaa;
+    width: 250px;
+    height: 250px;
+    margin: 50px auto;
+    transition: 1s all;
+    padding: 17px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.card > h2{
+    text-align: center;
+}
+.card > button{
+    padding: 7px 18px;
+    border: none;
+    background-color: #2d8;
+    border-radius: 15px;
+    transition: .3s background-color ease, .3s color ease;
+    cursor: pointer;
+}
+.card > button:hover{
+    padding: 7px 18px;
+    border: none;
+    background-color: #2a5;
+    border-radius: 15px;
+    color: #fff;
+}
+.rotar{
+    transform: rotateY(360deg);
+}
+
+.modalContainer{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.5);
+}
+.modalItem{
+    display: flex;
+    position: relative;
+    width: 280px;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff;
+    padding: 20px;
+}
+.modalItem > h2{
+    text-align: center;
+}
+.modalItem > input{
+    border: none;
+    border-bottom: 2px solid #2d8;
+    outline: none;
+}
+.modalItem > input, .modalItem > #aceptar{
+    padding: 5px;
+}
+.modalItem > #aceptar{
+    border: none;
+    background-color: #2d8;
+    border-radius: 15px;
+    transition: .3s background-color ease, .3s color ease;
+}
+.modalItem > #aceptar:hover{
+    color: #fff;
+    background-color: #2a5;
+}
+.modalItem > svg{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 7px;
+    cursor: pointer;
+    transition: .3s fill ease;
+}
+.modalItem > svg:hover{
+    fill: #2d8;
+}
+.account{
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+}
+.account > h5{
+    font-size: 15px;
+}
+.account > #cerrarC{
+    padding: 7px 19px;
+    border: none;
+    background-color: #2d8;
+    border-radius: 15px;
+    transition: .3s background-color ease, .3s color ease;
+}
+.account > #cerrarC:hover{
+    color: #fff;
+    background-color: #2a5;
+}
